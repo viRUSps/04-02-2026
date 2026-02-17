@@ -183,7 +183,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Год</segments>
+          <segments>Объект.ГодОтпуска</segments>
         </dataPath>
         <extendedTooltip>
           <name>ГодРасширеннаяПодсказка</name>
@@ -573,6 +573,14 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>AfterDeleteRow</event>
+      <name>ОтпускаСотрудниковПослеУдаления</name>
+    </handlers>
+    <handlers>
+      <event>OnChange</event>
+      <name>ОтпускаСотрудниковПриИзменении</name>
+    </handlers>
     <searchStringAddition>
       <visible>true</visible>
       <enabled>true</enabled>

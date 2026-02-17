@@ -21,7 +21,7 @@
   <content>InformationRegister.ВКМ_ГрафикиРаботы</content>
   <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
-  <content>Report.ВКМ_выработкаСпециалистов</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <content>DataProcessor.ВКМ_СозданиеАктов</content>
   <parentSubsystem>Subsystem.ВКМ_ДобавленыеОбъекты</parentSubsystem>
 </mdclass:Subsystem>

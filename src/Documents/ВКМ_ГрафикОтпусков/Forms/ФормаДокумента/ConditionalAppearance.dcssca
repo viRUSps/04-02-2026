@@ -3,20 +3,20 @@
 	<item>
 		<selection>
 			<item>
-				<field>ОтпускаСотрудниковСотрудник</field>
+				<field>ОтпускаСотрудников</field>
 			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ОтпускаСотрудников.Продолжительность</left>
-				<comparisonType>Greater</comparisonType>
-				<right xsi:type="xs:decimal">28</right>
+				<left xsi:type="dcscor:Field">Объект.ОтпускаСотрудников.БольшеЛимита</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
 			</item>
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>ЦветФона</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:ДобавленныйРеквизитФон</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">#CCFFFF</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>

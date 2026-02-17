@@ -1304,7 +1304,7 @@
   <reports>Report.ПрогрессОтложенногоОбновления</reports>
   <reports>Report.СведенияОПользователях</reports>
   <reports>Report.УниверсальныйОтчет</reports>
-  <reports>Report.ВКМ_выработкаСпециалистов</reports>
+  <reports>Report.ВКМ_ВыработкаСпециалистов</reports>
   <reports>Report.ВКМ_АнализВыставленныхАктов</reports>
   <reports>Report.ВКМ_РасчётыССотрудниками</reports>
   <reports>Report.ВКМ_ГрафикОтпусков</reports>

@@ -103,23 +103,6 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="e2ea1778-fc3d-4e42-b816-50c93b9bba74">
-      <name>РазмерОклада</name>
-      <synonym>
-        <key>ru</key>
-        <value>Размер оклада</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="3c4139aa-6eec-40fc-adf0-5e6249281f48">
       <name>ГрафикРаботы</name>
       <synonym>

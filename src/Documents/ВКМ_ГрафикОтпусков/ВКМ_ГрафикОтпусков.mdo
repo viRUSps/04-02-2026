@@ -31,10 +31,10 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="33d46df6-05d0-42c8-b143-b60920ed7db4">
-    <name>Год</name>
+    <name>ГодОтпуска</name>
     <synonym>
       <key>ru</key>
-      <value>Год</value>
+      <value>Год отпуска</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -135,6 +135,20 @@
         <numberQualifiers>
           <precision>3</precision>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c0fcef93-66cd-46ca-9846-87fe8bb7fd27">
+      <name>БольшеЛимита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Больше лимита</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

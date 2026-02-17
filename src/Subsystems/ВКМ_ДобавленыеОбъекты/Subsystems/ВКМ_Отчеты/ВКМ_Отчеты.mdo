@@ -8,7 +8,7 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.ВКМ_АнализВыставленныхАктов</content>
-  <content>Report.ВКМ_выработкаСпециалистов</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <content>Report.ВКМ_РасчётыССотрудниками</content>
   <content>Report.ВКМ_ГрафикОтпусков</content>
   <parentSubsystem>Subsystem.ВКМ_ДобавленыеОбъекты</parentSubsystem>

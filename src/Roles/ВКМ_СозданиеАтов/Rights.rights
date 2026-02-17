@@ -6416,7 +6416,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ВКМ_выработкаСпециалистов</name>
+		<name>Report.ВКМ_ВыработкаСпециалистов</name>
 		<right>
 			<name>Use</name>
 			<value>false</value>

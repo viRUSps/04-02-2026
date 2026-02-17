@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
-    <name>Год</name>
-    <id>7</id>
+    <name>ГодОтпуска</name>
+    <id>85</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Год</segments>
+      <segments>Объект.ГодОтпуска</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ГодРасширеннаяПодсказка</name>
-      <id>9</id>
+      <name>ГодОтпускаРасширеннаяПодсказка</name>
+      <id>87</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -27,8 +27,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ГодКонтекстноеМеню</name>
-      <id>8</id>
+      <name>ГодОтпускаКонтекстноеМеню</name>
+      <id>86</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -37,7 +37,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -45,6 +45,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
+      <extendedEditMultipleValues>true</extendedEditMultipleValues>
       <editFormat>
         <key>ru</key>
         <value>ДФ=yyyy</value>
@@ -398,7 +399,6 @@
       <common>true</common>
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
     <event>OnCreateAtServer</event>
@@ -448,6 +448,26 @@
       <common>true</common>
     </edit>
     <extInfo xsi:type="form:GanttChartExtInfo"/>
+  </attributes>
+  <attributes>
+    <name>Год</name>
+    <title>
+      <key>ru</key>
+      <value>Год</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <commandInterface>
     <navigationPanel/>
