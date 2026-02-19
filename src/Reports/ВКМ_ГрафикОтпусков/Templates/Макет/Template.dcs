@@ -59,14 +59,14 @@
 	(ВЫБРАТЬ
 		План.Сотрудник КАК Сотрудник,
 		РАЗНОСТЬДАТ(ВЫБОР
-			КОГДА План.ДатаНачала &lt; &amp;НачалоПериода
-				ТОГДА &amp;НачалоПериода
-			ИНАЧЕ План.ДатаНачала
-		КОНЕЦ, ВЫБОР
-			КОГДА План.ДатаОкончания &gt; &amp;КонецПериода
-				ТОГДА &amp;КонецПериода
-			ИНАЧЕ План.ДатаОкончания
-		КОНЕЦ, ДЕНЬ) + 1 КАК ПланДней,
+				КОГДА План.ДатаНачала &lt; &amp;НачалоПериода
+					ТОГДА &amp;НачалоПериода
+				ИНАЧЕ План.ДатаНачала
+			КОНЕЦ, ВЫБОР
+				КОГДА План.ДатаОкончания &gt; &amp;КонецПериода
+					ТОГДА &amp;КонецПериода
+				ИНАЧЕ План.ДатаОкончания
+			КОНЕЦ, ДЕНЬ) + 1 КАК ПланДней,
 		0 КАК ФактДней
 	ИЗ
 		Документ.ВКМ_ГрафикОтпусков.ОтпускаСотрудников КАК План
@@ -74,27 +74,28 @@
 		План.Ссылка.Проведен = ИСТИНА
 		И План.ДатаНачала &lt;= &amp;КонецПериода
 		И План.ДатаОкончания &gt;= &amp;НачалоПериода
-
+	
 	ОБЪЕДИНИТЬ ВСЕ
-
+	
 	ВЫБРАТЬ
 		Факт.Сотрудник,
 		0,
 		РАЗНОСТЬДАТ(ВЫБОР
-			КОГДА Факт.ДатаНачала &lt; &amp;НачалоПериода
-				ТОГДА &amp;НачалоПериода
-			ИНАЧЕ Факт.ДатаНачала
-		КОНЕЦ, ВЫБОР
-			КОГДА Факт.ДатаОкончания &gt; &amp;КонецПериода
-				ТОГДА &amp;КонецПериода
-			ИНАЧЕ Факт.ДатаОкончания
-		КОНЕЦ, ДЕНЬ) + 1
+				КОГДА Факт.ДатаНачала &lt; &amp;НачалоПериода
+					ТОГДА &amp;НачалоПериода
+				ИНАЧЕ Факт.ДатаНачала
+			КОНЕЦ, ВЫБОР
+				КОГДА Факт.ДатаОкончания &gt; &amp;КонецПериода
+					ТОГДА &amp;КонецПериода
+				ИНАЧЕ Факт.ДатаОкончания
+			КОНЕЦ, ДЕНЬ) + 1
 	ИЗ
 		Документ.ВКМ_ГрафикОтпусков.ОтпускаСотрудников КАК Факт
 	ГДЕ
 		Факт.Ссылка.Проведен = ИСТИНА
 		И Факт.ДатаНачала &lt;= &amp;КонецПериода
 		И Факт.ДатаОкончания &gt;= &amp;НачалоПериода) КАК ТЧ
+
 СГРУППИРОВАТЬ ПО
 	ТЧ.Сотрудник</query>
 	</dataSet>
@@ -120,8 +121,10 @@
 				<v8:DateFractions>Date</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<value xsi:nil="true"/>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -139,6 +142,8 @@
 		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -162,14 +167,16 @@
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>НачалоПериода</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>776ebacb-688b-4ef9-8e04-d607ed61e246</dcsset:userSettingID>
+					<dcsset:userSettingID>a68f7679-9408-4eb2-9803-f9f4e075e395</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>КонецПериода</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>9d6d8297-6f0f-4a5e-a127-5be95fa0529c</dcsset:userSettingID>
+					<dcsset:userSettingID>59090aed-7ef9-4bb3-bd24-27bdf86d38ad</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>

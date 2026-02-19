@@ -20,5 +20,7 @@
   <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
   <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
   <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
+  <content>Constant.ВКМ_ТокенУправленияТелеграмБотом</content>
   <parentSubsystem>Subsystem.ВКМ_ДобавленыеОбъекты</parentSubsystem>
 </mdclass:Subsystem>
